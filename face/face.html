@@ -1,0 +1,517 @@
+<!DOCETYPEhtml>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" href="./pikok.ico" type="image/x-icon" sizes="16x16">
+		<!-- Required meta tags
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+
+		<title>관상테스트</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="fstyle.css" type="text/css" rel="stylesheet" />
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6152a442f397e028"></script>
+		<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-145482737-6');
+    </script>
+	</head>
+
+	<body>
+		<!-- <div class="icon" align="right">
+		    <input type="checkbox" id="menuicon" />
+		    <label for="menuicon" style="margin-right: 5%;">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		    </label>
+		    <div class="sidebar"></div>
+		</div> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light nav-distance" style="background:#f5d042;" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://pikok.ga"
+                    ><b style="font-size: 30px; color: #d63384;">PIKOK</b></a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align:center;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="http://pikok.netlify.app/kakao/kakao.html"
+                                ><b style="color:#0a174e; font-size: 1rem;font-weight: 100;"
+                                    >카카오톡 페이크콘</b
+                                ></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://pikok.netlify.app/face/face.html"
+                                ><b style="color: #0a174e; font-size: 1rem;font-weight: 100;">관상테스트</b></a
+                            >
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="http://pikok.netlify.app/face/face.html"
+                                ><b style="color: #0a174e; font-size: 1rem;font-weight: 100;">수면시간 계산기</b></a
+                            >
+                        </li>
+                        <!-- <li class="nav-item dropdown"> -->
+                            <!-- <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Dropdown
+                            </a> -->
+                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul> -->
+                        <!-- </li> -->
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+
+		<section class="section">
+			<h1 class="title"><b class="bbb">인공지능 관상 테스트</b></h1>
+			<h2 class="subtitle"><b class="bbb">나의 관상은 어떨까?</b></h2>
+		</section>
+		<section class="youtube" style="width: 300px; height:4rem;">
+			<div class="youtuebe-cover"></div>
+		</section>
+ <h3 class="pb-2 d-flex justify-content-center" >성별을 선택하세요</h3>
+    <section class=" pt-4 d-flex justify-content-center">
+		<p class="d-flex align-items-center pr-3" style="font-size: 16px;"><b>여자</b></p>
+        <div>
+            <input type="checkbox" id="gender">
+            <label for="gender">
+                <span class="knob">
+                    <i></i>
+                </span>
+            </label>
+        </div>
+		<p class="d-flex align-items-center pl-3" style="font-size: 16px;"><b>남자</b></p>
+    </section>
+
+		<script
+			class="jsbin"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+		></script>
+		<div class="mt-5 container file-upload">
+			<!-- <button
+				class="file-upload-btn"
+				type="button"
+				onclick="$('.file-upload-input').trigger( 'click' )"
+			>
+				Add Image
+			</button> -->
+
+			<div class="image-upload-wrap">
+				<input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*"/>
+				<div class="mb-5 pb-5 pt-4 drag-text">
+					<img src="upload.png" class="mt-5 pt-5 upload" />
+					<h4 class="mt-2 pt-2 upload-text"><b>눌러서 얼굴 사진을 업로드하세요!</b></h4>
+				</div>
+			</div>
+			<div class="file-upload-content">
+				<img class="file-upload-image" id="face-image" src="#" alt="your image" />
+				<div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <!-- <span class="sr-only">Loading...</span> -->
+                </div>
+					<p class="text-center"><b>AI가 당신의 관상을 분석중입니다.</b></p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+			
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" class="try-again-btn" onclick="gaReload()">
+					<span class="try-again-text" onClick="window.location.href=window.location.href"><b>다른 사진으로 재시도</b></span>
+                </button>
+            </div>
+        </div>
+    </div>
+		<div style="width=5rem; height: 4rem; margin: 0 auto;">
+		</div>
+		<h4 class="mt-1 text-center"><b>🚫사진은 절대 어디에도 저장되지 않습니다🚫</b></h4>
+					<!-- <button type="button" onclick="removeUpload()" class="remove-image">
+						Remove <span class="image-title">Uploaded Image</span>
+					</button> -->
+			<!-- </div>
+		</div> -->
+		<div style="width=5rem; height: 4rem; margin: 0 auto;">
+		</div><div id="like_button_container"></div>
+		<div id="webcam-container"></div>
+		<!-- <div id="label-container"></div> -->
+		<div id="disqus_thread"></div>
+		<script>
+			/**
+			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+			/*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+			(function () {
+				// DON'T EDIT BELOW THIS LINE
+				var d = document,
+					s = d.createElement('script');
+				s.src = 'https://sseong-1.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript
+			>Please enable JavaScript to view the
+			<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript
+		>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+		<!-- </script> -->
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			function removeUpload() {
+				$('.file-upload-input').replaceWith($('.file-upload-input').clone());
+				$('.file-upload-content').hide();
+				$('.image-upload-wrap').show();
+			}
+			$('.image-upload-wrap').bind('dragover', function () {
+				$('.image-upload-wrap').addClass('image-dropping');
+			});
+			$('.image-upload-wrap').bind('dragleave', function () {
+				$('.image-upload-wrap').removeClass('image-dropping');
+			});
+		</script>
+		<script type="text/javascript">
+			// More API functions here:
+			// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+			// the link to your model provided by Teachable Machine export panel
+			
+			const urlMale = 'https://teachablemachine.withgoogle.com/models/AcHgCKThR/';
+			const urlFemale = "https://teachablemachine.withgoogle.com/models/AcHgCKThR/";// 바꿔야함 링크
+
+
+			let model, webcam, labelContainer, maxPredictions;
+
+			// Load the image model and setup the webcam
+			
+			
+			// async function init() {
+			// 	const modelURL = URL + 'model.json';
+			// 	const metadataURL = URL + 'metadata.json';
+			// 	model = await tmImage.load(modelURL, metadataURL);
+			// 	maxPredictions = model.getTotalClasses();
+			// 	labelContainer = document.getElementById('label-container');
+			// 	for (let i = 0; i < maxPredictions; i++) {
+			// 		labelContainer.appendChild(document.createElement('div'));
+			// 	}
+			// }
+			
+			
+			async function init() {
+				if (document.getElementById('gender').checked) {
+					URL = urlMale;
+				} else {
+					URL = urlFemale;
+				}
+				const modelURL = URL + 'model.json';
+				const metadataURL = URL + 'metadata.json';
+				model = await tmImage.load(modelURL, metadataURL);
+				maxPredictions = model.getTotalClasses();
+				labelContainer = document.getElementById('label-container');
+				for (let i = 0; i < maxPredictions; i++) {
+					var element = document.createElement('div');
+					element.classList.add('d-flex');
+					labelContainer.appendChild(element);
+				}
+			}
+
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+
+					reader.onload = function (e) {
+						$('.image-upload-wrap').hide();
+						$('#loading').show();
+						$('.file-upload-image').attr('src', e.target.result);
+						$('.file-upload-content').show();
+
+						$('.image-title').html(input.files[0].name);
+					};
+
+					reader.readAsDataURL(input.files[0]);
+					init().then(function () {
+						console.log('finish bring sample');
+						predict();
+						$('#loading').hide();
+					});
+				} else {
+					removeUpload();
+				}
+			}
+			
+			// run the webcam image through the image model
+			// async function predict() {
+			// 	// predict can take in an image, video or canvas html element
+			// 	var image = document.getElementById('face-image');
+			// 	const prediction = await model.predict(image, false);
+			// 	prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+			// 	console.log(prediction[0].className);
+			// 	var resultMessage;
+			// 	switch (prediction[0].className) {
+			// 		case "학눈":
+			// 			resultMessage = "학눈"
+			// 			break;
+			// 		case "거북이눈":
+			// 			resultMessage = "거북이눈"
+			// 			break;
+			// 		case "짝눈":
+			// 			resultMessage = "짝눈"
+			// 			break;
+			// 		case "용눈":
+			// 			resultMessage = "용눈"
+			// 			break;
+			// 		case "봉황눈":
+			// 			resultMessage = "봉황눈"
+			// 			break;
+			// 		case "사자눈":
+			// 			resultMessage = "사자눈"
+			// 			break;
+			// 		default:
+			// 			resultMessage = "알 수 없음	"
+			// 	}
+			// 	$('.result-message').html(resultMessage);
+			// 	for (let i = 0; i < maxPredictions; i++) {
+			// 		const classPrediction =
+			// 			prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
+			// 		labelContainer.childNodes[i].innerHTML = classPrediction;
+			// 	}
+			
+			async function predict() {
+				var image = document.getElementById('face-image');
+				const prediction = await model.predict(image, false);
+				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+				console.log(prediction[0].className);
+				var resultTitle, resultExplain, resultCeleb;
+				if (document.getElementById('gender').checked) {
+					gtag('event', '동물상 테스트 수행', {
+						event_category: '동물상 테스트 수행',
+						event_label: '남자',
+					});
+					switch (prediction[0].className) {
+						case '학눈':
+							resultTitle = '인기많은 학눈 관상';
+							resultExplain =
+								'동양인에게 가장 많은 형태로 크지도 작지도 않은 보통 크기에 눈동자가 흑백이 분명하다고 합니다. 청렴결백하고 이상이 높고 원대하여 주변에 선망도 두텁다고 합니다.';
+							resultCeleb = '학눈 관상 유명인: 허지웅, 박진영, 서태지';
+							gtag('event', '남자 결과 강아지상', { event_category: '남자 결과' });
+							break;
+						case '거북이눈':
+							resultTitle = '정 많고 건강한 거북이눈 관상';
+							resultExplain =
+								'동그런 눈에 윗 눈꺼풀이 여러겁으로 섬세하게 잡혀있다고 합니다. 정이 많고 느긋하여 고고한 성품이고, 건강한 신체 조건을 가지고 있어 장수하고 자손과 행복한 삶을 영위한다고 합니다.';
+							resultCeleb =
+								'거북이눈 관상 유명인: 백종원, 원빈';
+							gtag('event', '남자 결과 고양이상', { event_category: '남자 결과' });
+							break;
+						case '용눈':
+							resultTitle = '관상 순위 2위! 용눈 관상';
+							resultExplain =
+								'큰 눈에 흑백이 분명하고, 길게 찢어져 있다고 해요. 봉황눈 보다 한 단계 낮지만 용눈만 갖추어도 일국의 제왕이나 황후가 될 가능성이 높다고 합니다.';
+							resultCeleb =
+								'용눈 관상 유명인: 황민현(뉴이스트)';
+							gtag('event', '남자 결과 토끼상', { event_category: '남자 결과' });
+							break;
+						case '짝눈':
+							resultTitle = '양쪽 눈 크기가 다른 짝눈관상';
+							resultExplain =
+								'거짓말을 잘 할 수 있는 인상이 있어 신뢰감이 적지만 재물복이 있는 편이라 합니다. 직업에 따라 다를 수 있지만 일단 솔직한 일을 해야 좋은 눈이라고 합니다.';
+							resultCeleb = '짝눈 관상 유명인: 김수현, 주지훈';
+							gtag('event', '남자 결과 공룡상', { event_category: '남자 결과' });
+							break;
+						case '사자눈':
+							resultTitle = '빠른 출새의 사자눈 관상';
+							resultExplain =
+								'큰 눈에 쌍커풀이 잇으며 눈 꼬리가 위로 올라갔다고 합니다. 지혜롭고 호탕한 성경의 리더형의 눈으로 관복이 좋아 일찍 출세하지만, 과격한 성격과 과한 욕심을 주의 해야 한다고 합니다.';
+							resultCeleb = '사자눈 관상 유명인: 고수, 장동건';
+							gtag('event', '남자 결과 곰상', { event_category: '남자 결과' });
+						case '봉황눈':
+							resultTitle = '관상 최고로 쳐주는 봉황눈 관상';
+							resultExplain =
+								'관상중에서 가장 좋은 눈관상이고 최고의 눈이라고 할 수 있습니다. 현대사회의 미적요소와는 반대되지만 관상학적으로는 얇고, 길고 세밀할수록 최고로 치며 그 최고가 봉황눈이라고 합니다.';
+							resultCeleb = '봉황눈 관상 유명인: 세종대왕, 소지섭, 유승호, 퇴계이황, 양현석';
+							gtag('event', '남자 결과 곰상', { event_category: '남자 결과' });
+							break;
+						default:
+							resultTitle = '알수없음';
+							resultExplain = '';
+							resultCeleb = '';
+							gtag('event', '남자 결과 알수없음', { event_category: '남자 결과' });
+					}
+				} else {
+					gtag('event', '동물상 테스트 수행', {
+						event_category: '동물상 테스트 수행',
+						event_label: '남자',
+					});
+					switch (prediction[0].className) {
+						case '학눈':
+							resultTitle = '인기많은 학눈 관상';
+							resultExplain =
+								'동양인에게 가장 많은 형태로 크지도 작지도 않은 보통 크기에 눈동자가 흑백이 분명하다고 합니다. 청렴결백하고 이상이 높고 원대하여 주변에 선망도 두텁다고 합니다.';
+							resultCeleb = '학눈 관상 유명인: 허지웅, 박진영, 서태지';
+							gtag('event', '남자 결과 강아지상', { event_category: '남자 결과' });
+							break;
+						case '거북이눈':
+							resultTitle = '정 많고 건강한 거북이눈 관상';
+							resultExplain =
+								'동그런 눈에 윗 눈꺼풀이 여러겁으로 섬세하게 잡혀있다고 합니다. 정이 많고 느긋하여 고고한 성품이고, 건강한 신체 조건을 가지고 있어 장수하고 자손과 행복한 삶을 영위한다고 합니다.';
+							resultCeleb =
+								'거북이눈 관상 유명인: 백종원, 원빈';
+							gtag('event', '남자 결과 고양이상', { event_category: '남자 결과' });
+							break;
+						case '용눈':
+							resultTitle = '관상 순위 2위! 용눈 관상';
+							resultExplain =
+								'큰 눈에 흑백이 분명하고, 길게 찢어져 있다고 해요. 봉황눈 보다 한 단계 낮지만 용눈만 갖추어도 일국의 제왕이나 황후가 될 가능성이 높다고 합니다.';
+							resultCeleb =
+								'용눈 관상 유명인: 황민현(뉴이스트)';
+							gtag('event', '남자 결과 토끼상', { event_category: '남자 결과' });
+							break;
+						case '짝눈':
+							resultTitle = '양쪽 눈 크기가 다른 짝눈관상';
+							resultExplain =
+								'거짓말을 잘 할 수 있는 인상이 있어 신뢰감이 적지만 재물복이 있는 편이라 합니다. 직업에 따라 다를 수 있지만 일단 솔직한 일을 해야 좋은 눈이라고 합니다.';
+							resultCeleb = '짝눈 관상 유명인: 김수현, 주지훈';
+							gtag('event', '남자 결과 공룡상', { event_category: '남자 결과' });
+							break;
+						case '사자눈':
+							resultTitle = '빠른 출새의 사자눈 관상';
+							resultExplain =
+								'큰 눈에 쌍커풀이 잇으며 눈 꼬리가 위로 올라갔다고 합니다. 지혜롭고 호탕한 성경의 리더형의 눈으로 관복이 좋아 일찍 출세하지만, 과격한 성격과 과한 욕심을 주의 해야 한다고 합니다.';
+							resultCeleb = '사자눈 관상 유명인: 고수, 장동건';
+							gtag('event', '남자 결과 곰상', { event_category: '남자 결과' });
+						case '봉황눈':
+							resultTitle = '관상 최고로 쳐주는 봉황눈 관상';
+							resultExplain =
+								'관상중에서 가장 좋은 눈관상이고 최고의 눈이라고 할 수 있습니다. 현대사회의 미적요소와는 반대되지만 관상학적으로는 얇고, 길고 세밀할수록 최고로 치며 그 최고가 봉황눈이라고 합니다.';
+							resultCeleb = '봉황눈 관상 유명인: 세종대왕, 소지섭, 유승호, 퇴계이황, 양현석';
+							gtag('event', '남자 결과 곰상', { event_category: '남자 결과' });
+							break;
+						default:
+							resultTitle = '알수없음';
+							resultExplain = '';
+							resultCeleb = '';
+							gtag('event', '남자 결과 알수없음', { event_category: '남자 결과' });
+					}
+				}
+				
+				var title = "<div class='" + prediction[0].className + "-animal-title'><b>" + resultTitle + "</b></div>";
+				var explain = "<div class='animal-explain pt-2'><b>" + resultExplain + "</b></div>";
+				var celeb = "<div class='" + prediction[0].className + "-animal-celeb pt-2 pb-2'><b>" + resultCeleb + "</b></div>";
+				$('.result-message').html(title + explain + celeb);
+				
+				var barWidth;
+				for (let i = 0; i < maxPredictions; i++) {
+					if (prediction[i].probability.toFixed(2) > 0.1) {
+						barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
+					} else if (prediction[i].probability.toFixed(2) >= 0.01) {
+						barWidth = '4%';
+					} else {
+						barWidth = '2%';
+					}
+					var labelTitle;
+					switch (prediction[i].className) {
+						case '학눈':
+							labelTitle = '학 관상';
+							break;
+						case '거북이눈':
+							labelTitle = '거북이 관상';
+							break;
+						case '짝눈':
+							labelTitle = '짝눈 관상';
+							break;
+						case '용눈':
+							labelTitle = '용 관상';
+							break;
+						case '봉황눈':
+							labelTitle = '봉황 관상';
+							break;
+						case '사자눈':
+							labelTitle = '사자 관상';
+							break;
+						default:
+							labelTitle = '알 수 없음';
+					}
+					var label = "<div class='animal-label d-flex align-items-center'><b>" + labelTitle + "</b></div>"
+					var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth +
+						"'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + '%</span></div></div>';
+					labelContainer.childNodes[i].innerHTML = label + bar;
+				}
+			}
+		</script>
+	<!-- <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+	<script src="like_button.js"></script> -->
+	</body>
+	<!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+</html>
