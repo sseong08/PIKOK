@@ -9,12 +9,12 @@ function airpod() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url:
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'THU':
 								'https://nory.cc/ko/social/kakaotalk/gifticon/assets/img/meme1.png',
 						
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
