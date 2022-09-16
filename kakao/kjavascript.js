@@ -49,11 +49,11 @@ function bera() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/bera_1.png',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/bera_1.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -85,12 +85,12 @@ function chk() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url:
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url':
 								'https://nory.cc/ko/social/kakaotalk/gifticon/assets/img/meme4.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -122,11 +122,11 @@ function gang() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/hongsam2.png',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/hongsam2.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -158,11 +158,11 @@ function gift() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/giftcard2.png',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/giftcard2.png',
 						
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -194,11 +194,11 @@ function gs25() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/gs_1.png',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/gs_1.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -230,11 +230,11 @@ function iphone() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/iphone_mini4.png',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/iphone_mini4.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -266,12 +266,12 @@ function lol() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url:
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url':
 								'https://nory.cc/ko/social/kakaotalk/gifticon/assets/img/meme3.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -303,11 +303,11 @@ function mas() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/gift_0426_2.png',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/gift_0426_2.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -339,11 +339,11 @@ function mom() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/moms.png',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/moms.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -375,11 +375,11 @@ function star() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/starbucks2.png',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/starbucks2.png',
 							
-							btn_url: 'https://www.naver.com/',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},
@@ -410,10 +410,10 @@ function bebe() {
 					Kakao.Link.sendCustom({
 						templateId: 59297,
 						templateArgs: {
-							title: nickname + '님이 선물과 메시지를 보냈습니다',
-							desc: '자세한 내용은 선물함에서 확인해주세요.',
-							img_url: 'https://hwanggu1.github.io/nion-cdn/bbae_4_1.png',
-							btn_url: 'https://www.naver.com/',
+							'title': nickname + '님이 선물과 메시지를 보냈습니다',
+							'desc': '자세한 내용은 선물함에서 확인해주세요.',
+							'img_url': 'https://hwanggu1.github.io/nion-cdn/bbae_4_1.png',
+							'btn_url': 'https://www.naver.com/',
 						},
 					});
 				},

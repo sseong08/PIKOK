@@ -109,6 +109,7 @@
             <h1 style="text-align:center; color: #f5d042;">전체 콘텐츠</h1>
             <div class="suve1 justify-content-center">
                 <!-- <div class="container" width="220" height="220"> -->
+				<div class="scrollmenu">
                     <a href="./kakao/kakao.html">
                         <img
                             src="kakaofake (3).jpg"
@@ -122,15 +123,18 @@
                         </div> -->
                     </a>
                 <!-- </div> -->
-                &nbsp; &nbsp;
+                <!-- &nbsp; &nbsp; -->
                 <a href="./face/face.html"
                     ><img src="faceid.png" alt="My Image" width="220" height="220" class="image"
                 /></a>
-                &nbsp; &nbsp;
+                <!-- &nbsp; &nbsp; -->
                 <a href="./sleep/sleep.html"
                     ><img src="sleep.png" alt="My Image" width="220" height="220" class="image"
                 /></a>
+					 <!-- &nbsp; &nbsp; -->
+                <!-- &nbsp; &nbsp; -->
                 <!--<a href="./lotto/lotto.html"><button class="button">로또 당첨 예상 번호</button> </a>-->
+				</div>
             </div>
         </div>
         <!-- <div>
@@ -146,5 +150,36 @@
 		<p class="position-absolute bottom-0 start-50 translate-middle-x"style= "color: #f5d042; text-align:center;">
 			© 2022 Hyeon Seong. All rights reserved.
 		</p>
+		<script>
+			const slider = document.querySelector('.scrollmenu');
+			let isDown = false;
+			let startX;
+			let scrollLeft;
+					
+			slider.addEventListener('mousedown', (e) => {
+			    isDown = true;
+			    slider.classList.add('active');
+			    startX = e.pageX - slider.offsetLeft;
+			    scrollLeft = slider.scrollLeft;
+			});
+					
+			slider.addEventListener('mouseleave', () => {
+			    isDown = false;
+			    slider.classList.remove('active');
+			});
+					
+			slider.addEventListener('mouseup', () => {
+			    isDown = false;
+			    slider.classList.remove('active');
+			});
+					
+			slider.addEventListener('mousemove', (e) => {
+			    if (!isDown) return;
+			    e.preventDefault();
+			    const x = e.pageX - slider.offsetLeft;
+			    const walk = x - startX;
+			    slider.scrollLeft = scrollLeft - walk;
+			});
+		</script>
     </body>
 </html>
