@@ -30,7 +30,7 @@ function start(){
 		var Fh = '오후 ' + String(Math.abs(a+3));
 	}
 	if(Sh>=13){
-		var Sh ='오전 ' + String(Math.abs(a+4-11));
+		var Sh ='오전 ' + String(Math.abs(a+4-12));
 	}else{
 		var Sh = '오후 ' + String(Math.abs(a+4));
 	}
